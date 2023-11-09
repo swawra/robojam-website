@@ -3,3 +3,6 @@ useful stuff here
 # enable cloudbuild API
 gcloud services enable cloudbuild.googleapis.com
 
+# configure local docker to access artefact repo on gcp
+sudo gcloud auth configure-docker
+
