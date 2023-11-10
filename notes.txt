@@ -6,3 +6,19 @@ gcloud services enable cloudbuild.googleapis.com
 # configure local docker to access artefact repo on gcp
 sudo gcloud auth configure-docker
 
+# steps in order
+1. install git, docker, vscode
+2. get a nginx image and make it work, map content and ports
+3. build a simple hello world html, nginx.conf and Dockerfile
+4. build the image locally with Docker
+5. test it running locally in docker
+6. push to git
+7. configure GCP to connect to git in cloudbuild
+8. configure a trigger to build on push
+9. configure cloudrun to deploy image continuously
+10. verify dns in google (add txt record to your dns in fasthosts)
+11. update dns records with IPs from google
+12. map dns record to your cloudrun instance
+13. wait for cloudrun mappings to be complted (ssl issued)
+    check https://toolbox.googleapps.com/apps/dig/#A/
+
